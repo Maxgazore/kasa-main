@@ -1,3 +1,5 @@
+import { Link } from 'react-router'
+
 function Header() {
   return (
     <header className="header">
@@ -6,11 +8,9 @@ function Header() {
         src="src/assets/logo.png"
         alt="Logo de Kasa"
       />
-      <nav>
-        <ul className="header__nav">
-          <li className="header__nav--active">Accueil</li>
-          <li>A Propos</li>
-        </ul>
+      <nav className="header__nav">
+        <Link to="/">Accueil</Link>
+        <Link to="/about">A Propos</Link>
       </nav>
     </header>
   )

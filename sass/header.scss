@@ -1,5 +1,6 @@
 .header {
   display: flex;
+  align-items: center;
   justify-content: space-between;
   margin-inline: 100px;
   margin-top: 45px;
@@ -8,6 +9,7 @@
     list-style: none;
     font-size: 24px;
     gap: 57px;
+    height: 27px;
     &--active {
       border-bottom: 1px solid black;
       border-spacing: 0;
