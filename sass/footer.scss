@@ -1,0 +1,14 @@
+.footer {
+  background-color: black;
+  text-align: center;
+  &__logo {
+    filter: brightness(3);
+    transform: scale(0.5);
+    padding-top: 60px;
+  }
+  &__text {
+    color: white;
+    font-size: 24px;
+    padding-bottom: 29px;
+  }
+}
