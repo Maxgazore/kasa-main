@@ -1,10 +1,12 @@
 @use 'header.scss';
 @use 'home.scss';
+@use 'about.scss';
 @use 'footer.scss';
 
 * {
   font-family: 'Montserrat';
   margin: 0;
   text-decoration: none;
+  border: none;
   color: black;
 }
