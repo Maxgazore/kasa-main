@@ -1,0 +1,19 @@
+.error {
+  text-align: center;
+  &__title {
+    color: #ff6060;
+    font-size: 288px;
+    margin: 139px;
+  }
+  &__subtitle {
+    color: #ff6060;
+    font-size: 36px;
+    font-weight: 500;
+  }
+  &__link {
+    display: block;
+    width: 250px;
+    margin: 139px auto;
+    border-bottom: solid 1px black;
+  }
+}
