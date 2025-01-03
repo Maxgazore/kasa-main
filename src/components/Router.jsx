@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router'
-import Header from './header'
+import Header from './Header'
 import Home from './Home'
-import About from '../pages/about'
+import About from '../pages/About'
 import Error from '../pages/Error'
 
 function RoutesPath() {
