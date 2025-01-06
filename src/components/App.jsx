@@ -3,8 +3,9 @@ import Header from './Header'
 import Home from './Home'
 import About from '../pages/About'
 import Error from '../pages/Error'
+import Footer from './Footer'
 
-function RoutesPath() {
+function App() {
   return (
     <Router>
       <Header />
@@ -13,8 +14,9 @@ function RoutesPath() {
         <Route path="/about" element={<About />} />
         <Route path="/*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   )
 }
 
-export default RoutesPath
+export default App
