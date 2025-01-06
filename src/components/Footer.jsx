@@ -1,4 +1,4 @@
-function Footer() {
+export function Footer() {
   return (
     <footer className="footer">
       <img
@@ -10,5 +10,3 @@ function Footer() {
     </footer>
   )
 }
-
-export default Footer

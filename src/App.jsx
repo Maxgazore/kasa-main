@@ -1,11 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router'
-import Header from './Header'
-import Home from './Home'
-import About from '../pages/About'
-import Error from '../pages/Error'
-import Footer from './Footer'
+import Home from './pages/Home'
+import About from './pages/About'
+import Error from './pages/Error'
+import { Header, Footer } from './components'
 
-function App() {
+export function App() {
   return (
     <Router>
       <Header />
@@ -18,5 +17,3 @@ function App() {
     </Router>
   )
 }
-
-export default App

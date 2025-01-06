@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 
-function Error() {
+export function Error() {
   return (
     <section className="error">
       <h1 className="error__title">404</h1>
@@ -13,5 +13,3 @@ function Error() {
     </section>
   )
 }
-
-export default Error

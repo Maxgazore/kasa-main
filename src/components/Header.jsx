@@ -1,6 +1,6 @@
 import { Link } from 'react-router'
 
-function Header() {
+export function Header() {
   return (
     <header className="header">
       <img
@@ -15,5 +15,3 @@ function Header() {
     </header>
   )
 }
-
-export default Header

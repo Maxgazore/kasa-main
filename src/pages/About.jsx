@@ -1,6 +1,7 @@
 import { useState } from 'react'
+import { Banner } from '../components'
 
-function About() {
+export function About() {
   const data = [
     {
       title: 'Fiabilité',
@@ -31,11 +32,7 @@ function About() {
 
   return (
     <section className="about">
-      <img
-        className="about__img"
-        src="src/assets/images/about image.png"
-        alt="Image d'un paysage"
-      />
+      <Banner image={'src/assets/images/about image.png'} />
       <div className="about__info">
         {data.map((item, i) => (
           <div key={item.title} className="about__info__part">
@@ -61,5 +58,3 @@ function About() {
     </section>
   )
 }
-
-export default About
