@@ -69,7 +69,7 @@
   margin-top: 50px;
   margin-inline: 100px;
 }
-.about__img {
+.about__banner__img {
   filter: brightness(0.7);
   object-fit: cover;
   width: 100%;

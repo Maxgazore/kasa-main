@@ -2,11 +2,12 @@ import { Link } from 'react-router'
 import Data from '../assets/logements.json'
 import { Banner } from '../components'
 
-export function Home() {
+export default function Home() {
   return (
     <section className="home">
       <Banner
-        image={'src/assets/images/home image.png'}
+        classType={'home'}
+        image={'src/assets/images/home-image.png'}
         title={'Chez vous, partout et ailleurs'}
       />
       <div className="home__grid">

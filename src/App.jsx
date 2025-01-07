@@ -4,7 +4,7 @@ import About from './pages/About'
 import Error from './pages/Error'
 import { Header, Footer } from './components'
 
-export function App() {
+export default function App() {
   return (
     <Router>
       <Header />
