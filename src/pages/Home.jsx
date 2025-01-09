@@ -1,5 +1,5 @@
-import { Link } from 'react-router'
 import Data from '../assets/logements.json'
+import { Link } from 'react-router'
 import { Banner } from '../components'
 
 export default function Home() {
@@ -7,15 +7,20 @@ export default function Home() {
     <section className="home">
       <Banner
         classType={'home'}
-        image={'src/assets/images/home-image.png'}
+        img={'src/assets/images/home_image.png'}
         title={'Chez vous, partout et ailleurs'}
       />
       <div className="home__grid">
         {Data.map((item) => (
-          <Link to={item.id} key={item.id} className="card">
+          <Link
+            to="/detail"
+            state={{ from: item }}
+            key={item.id}
+            className="card"
+          >
             <img
               className="card__img"
-              src={item.pictures[0]}
+              src={item.cover}
               alt="Photo de la location"
             />
             <h2 className="card__title">{item.title}</h2>

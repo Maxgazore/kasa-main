@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types'
 import { useState } from 'react'
 
 export function Collapser({ classType, title, text }, i) {
@@ -28,4 +29,10 @@ export function Collapser({ classType, title, text }, i) {
       </p>
     </div>
   )
+}
+
+Collapser.propTypes = {
+  classType: PropTypes.string,
+  title: PropTypes.string,
+  text: PropTypes.string,
 }
