@@ -26,7 +26,7 @@ export default function About() {
 
   return (
     <section className="about">
-      <Banner classType={'about'} image={'src/assets/images/about_image.png'} />
+      <Banner classType={'about'} img={'src/assets/images/about_image.png'} />
       <div className="about__info">
         {data.map((item) => (
           <Collapser

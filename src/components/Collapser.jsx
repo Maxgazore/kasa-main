@@ -34,5 +34,5 @@ export function Collapser({ classType, title, text }, i) {
 Collapser.propTypes = {
   classType: PropTypes.string,
   title: PropTypes.string,
-  text: PropTypes.string,
+  text: PropTypes.node,
 }
