@@ -3,7 +3,7 @@ export function Footer() {
     <footer className="footer">
       <img
         className="footer__logo"
-        src="src/assets/logo.png"
+        src="src/assets/images/logo.png"
         alt="Logo de Kasa"
       />
       <p className="footer__text">© 2020 Kasa. All rights reserved</p>

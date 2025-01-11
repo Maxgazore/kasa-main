@@ -11,6 +11,11 @@ export function Collapser({ classType, title, text }, i) {
     setSelected(i)
   }
 
+  const rotation = {
+    transform: selected == i ? 'rotate(180deg)' : '',
+    transition: '200ms linear',
+  }
+
   return (
     <div className={classType + '__info__part'}>
       <div className={classType + '__info__part__collapser'}>
@@ -18,11 +23,14 @@ export function Collapser({ classType, title, text }, i) {
         <i
           className="fa-solid fa-chevron-up fa-xl"
           onClick={() => toggle(i)}
+          style={rotation}
         ></i>
       </div>
       <p
         className={
-          selected == i ? 'about__info__part__show' : 'about__info__part__hide'
+          selected == i
+            ? classType + '__info__part__show'
+            : classType + '__info__part__hide'
         }
       >
         {text}

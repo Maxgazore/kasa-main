@@ -187,25 +187,29 @@
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
 }
-.detail__info__item {
+.detail__info__first {
+  display: flex;
+  justify-content: space-between;
+}
+.detail__info__first__item {
   display: flex;
   flex-direction: column;
 }
-.detail__info__item h1 {
+.detail__info__first__item h1 {
   text-wrap: nowrap;
   color: #ff6060;
   font-size: 36px;
   font-weight: 500;
 }
-.detail__info__item h2 {
+.detail__info__first__item h2 {
   font-size: 18px;
   font-weight: 500;
 }
-.detail__info__item__tags {
+.detail__info__first__item__tags {
   display: flex;
   margin-block: 20px;
 }
-.detail__info__item__tags h4 {
+.detail__info__first__item__tags h4 {
   padding-inline: 30px;
   padding-block: 2px;
   border-radius: 10px;
@@ -214,12 +218,16 @@
   font-size: 14px;
   margin-right: 10px;
 }
-.detail__info__identity {
+.detail__info__first__person {
+  display: flex;
+  flex-direction: column;
+}
+.detail__info__first__person__identity {
   display: flex;
   align-items: center;
   justify-content: end;
 }
-.detail__info__identity h3 {
+.detail__info__first__person__identity h3 {
   width: min-content;
   text-align: right;
   color: #ff6060;
@@ -227,12 +235,23 @@
   font-weight: 500;
   margin-right: 10px;
 }
-.detail__info__identity img {
+.detail__info__first__person__identity img {
   width: 64px;
   border-radius: 32px;
 }
+.detail__info__first__person__rating {
+  margin-block: 20px;
+  text-align: right;
+}
+.detail__info__first__person__rating .fa-solid {
+  margin-left: 8px;
+}
+.detail__info__second {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 76px;
+}
 .detail__info__part {
-  justify-content: space-between;
   margin-block: 30px;
 }
 .detail__info__part__collapser {
@@ -254,7 +273,7 @@
 .detail__info__part__hide {
   border-radius: 5px;
   max-height: 0;
-  width: 99%;
+  width: 93%;
   background-color: #f8f8f8;
   padding-inline: 20px;
   padding-block: 0px;
@@ -264,7 +283,7 @@
 .detail__info__part__show {
   border-radius: 5px;
   max-height: 78px;
-  width: 99%;
+  width: 93%;
   background-color: #f8f8f8;
   padding-inline: 20px;
   padding-block: 20px;
