@@ -1,7 +1,7 @@
 .detail {
   margin-inline: 100px;
   margin-top: 50px;
-  &__banner {
+  &__slider {
     position: relative;
     margin-bottom: 24px;
     .arrow {
@@ -21,6 +21,14 @@
       object-fit: cover;
       border-bottom-right-radius: 25px;
       border-bottom-left-radius: 25px;
+    }
+    &__count {
+      position: absolute;
+      bottom: 25px;
+      left: 50%;
+      color: white;
+      font-size: 18px;
+      font-weight: 500;
     }
   }
   &__info {

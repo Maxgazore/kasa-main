@@ -19,5 +19,5 @@ export function Rating({ ratingData }) {
 }
 
 Rating.propTypes = {
-  ratingData: PropTypes.string.isRequired,
+  ratingData: PropTypes.string,
 }
