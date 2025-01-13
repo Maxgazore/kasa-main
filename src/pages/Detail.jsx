@@ -7,7 +7,7 @@ export default function Detail() {
   let item = data.state.myItem
   const length = item.pictures.length
   const [i, setI] = useState(0)
-  const displayStyle = item.pictures.length === 1 ? { display: 'none' } : null
+  const displayStyle = item.pictures.length == 1 ? { display: 'none' } : null
 
   function slideActions(isLeft) {
     if (isLeft) {

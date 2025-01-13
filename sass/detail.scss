@@ -102,6 +102,7 @@
       column-gap: 76px;
     }
     &__part {
+      width: 100%;
       margin-block: 30px;
       &__collapser {
         display: flex;
@@ -122,7 +123,6 @@
       &__hide {
         border-radius: 5px;
         max-height: 0;
-        width: 93%;
         background-color: #f8f8f8;
         padding-inline: 20px;
         padding-block: 0px;
@@ -131,8 +131,7 @@
       }
       &__show {
         border-radius: 5px;
-        max-height: 78px;
-        width: 93%;
+        max-height: 100px;
         background-color: #f8f8f8;
         padding-inline: 20px;
         padding-block: 20px;

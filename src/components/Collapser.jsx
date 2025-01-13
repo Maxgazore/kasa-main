@@ -26,15 +26,29 @@ export function Collapser({ classType, title, text }, i) {
           style={rotation}
         ></i>
       </div>
-      <p
-        className={
-          selected == i
-            ? classType + '__info__part__show'
-            : classType + '__info__part__hide'
-        }
-      >
-        {text}
-      </p>
+      {Array.isArray(text) ? (
+        <ul
+          className={
+            selected == i
+              ? classType + '__info__part__show'
+              : classType + '__info__part__hide'
+          }
+        >
+          {text.map((equipement, i) => (
+            <li key={i}>{equipement}</li>
+          ))}
+        </ul>
+      ) : (
+        <p
+          className={
+            selected == i
+              ? classType + '__info__part__show'
+              : classType + '__info__part__hide'
+          }
+        >
+          {text}
+        </p>
+      )}
     </div>
   )
 }
