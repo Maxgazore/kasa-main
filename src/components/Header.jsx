@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { NavLink } from 'react-router'
 
 export function Header() {
   return (
@@ -9,8 +9,18 @@ export function Header() {
         alt="Logo de Kasa"
       />
       <nav className="header__nav">
-        <Link to="/">Accueil</Link>
-        <Link to="/about">A Propos</Link>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'header__nav--active' : '')}
+          to="/"
+        >
+          Accueil
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? 'header__nav--active' : '')}
+          to="/about"
+        >
+          A Propos
+        </NavLink>
       </nav>
     </header>
   )
