@@ -54,10 +54,10 @@
         }
         &__tags {
           display: flex;
-          margin-block: 20px;
+          margin-block: 24px;
           h4 {
             padding-inline: 30px;
-            padding-block: 2px;
+            padding-block: 7px;
             border-radius: 10px;
             background-color: #ff6060;
             color: white;
@@ -103,14 +103,14 @@
     }
     &__part {
       width: 100%;
-      margin-block: 30px;
+      margin-bottom: 30px;
       &__collapser {
         display: flex;
         align-items: center;
         justify-content: space-between;
         background-color: #ff6060;
         padding-inline: 15px;
-        border-radius: 5px;
+        border-radius: 10px;
         height: 52px;
         .fa-solid {
           cursor: pointer;

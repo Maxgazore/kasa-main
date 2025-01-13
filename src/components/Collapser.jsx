@@ -1,18 +1,15 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
 
-export function Collapser({ classType, title, text }, i) {
-  const [selected, setSelected] = useState(null)
+export function Collapser({ classType, title, text }) {
+  const [selected, setSelected] = useState(false)
 
-  function toggle(i) {
-    if (selected == i) {
-      return setSelected(null)
-    }
-    setSelected(i)
+  function toggle() {
+    setSelected(!selected)
   }
 
   const rotation = {
-    transform: selected == i ? 'rotate(180deg)' : '',
+    transform: selected ? 'rotate(180deg)' : '',
     transition: '200ms linear',
   }
 
@@ -22,26 +19,26 @@ export function Collapser({ classType, title, text }, i) {
         <h2>{title}</h2>
         <i
           className="fa-solid fa-chevron-up fa-xl"
-          onClick={() => toggle(i)}
+          onClick={() => toggle()}
           style={rotation}
         ></i>
       </div>
       {Array.isArray(text) ? (
         <ul
           className={
-            selected == i
+            selected
               ? classType + '__info__part__show'
               : classType + '__info__part__hide'
           }
         >
-          {text.map((equipement, i) => (
-            <li key={i}>{equipement}</li>
+          {text.map((equipement, index) => (
+            <li key={index}>{equipement}</li>
           ))}
         </ul>
       ) : (
         <p
           className={
-            selected == i
+            selected
               ? classType + '__info__part__show'
               : classType + '__info__part__hide'
           }
