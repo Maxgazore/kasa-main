@@ -13,7 +13,7 @@ export default function Home() {
       <div className="home__grid">
         {Data.map((item) => (
           <Link
-            to={'/' + item.id}
+            to={'/detail/' + item.id}
             state={{ myItem: item }}
             key={item.id}
             className="card"

@@ -26,7 +26,7 @@ export default function Detail() {
             slideActions(true)
           }}
           className="arrow arrow_left"
-          src="src/assets/images/arrow_left.png"
+          src="../src/assets/images/arrow_left.png"
           alt="Flèche gauche"
         />
         <img
@@ -35,7 +35,7 @@ export default function Detail() {
             slideActions(false)
           }}
           className="arrow arrow_right"
-          src="src/assets/images/arrow_right.png"
+          src="../src/assets/images/arrow_right.png"
           alt="Flèche droite"
         />
         <img

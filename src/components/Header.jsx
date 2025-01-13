@@ -5,7 +5,7 @@ export function Header() {
     <header className="header">
       <img
         className="header__logo"
-        src="src/assets/images/logo.png"
+        src="../src/assets/images/logo.png"
         alt="Logo de Kasa"
       />
       <nav className="header__nav">
