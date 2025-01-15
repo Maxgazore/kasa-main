@@ -3,11 +3,11 @@ import { Navigate } from 'react-router'
 import { Rating, Collapser, Slider } from '../components'
 
 export default function Detail() {
-  let data = useLocation()
-  if (data.state === null) {
+  let location = useLocation()
+  if (!location.state) {
     return <Navigate replace to="/error" />
   }
-  let item = data.state.myItem
+  let item = location.state.itemData
 
   return (
     <section className="detail">

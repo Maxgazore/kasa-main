@@ -1,6 +1,9 @@
 .detail {
   margin-inline: 100px;
   margin-top: 50px;
+  @media (max-width: 768px) {
+    margin-inline: 20px;
+  }
   &__slider {
     position: relative;
     margin-bottom: 24px;
@@ -11,9 +14,15 @@
     }
     .arrow_left {
       left: 10px;
+      @media (max-width: 768px) {
+        height: 24px;
+      }
     }
     .arrow_right {
       right: 10px;
+      @media (max-width: 768px) {
+        height: 24px;
+      }
     }
     &__img {
       width: 100%;
@@ -21,6 +30,10 @@
       object-fit: cover;
       border-bottom-right-radius: 25px;
       border-bottom-left-radius: 25px;
+      @media (max-width: 768px) {
+        height: 255px;
+        border-radius: 10px;
+      }
     }
     &__count {
       position: absolute;
@@ -29,33 +42,50 @@
       color: white;
       font-size: 18px;
       font-weight: 500;
+      @media (max-width: 768px) {
+        display: none;
+      }
     }
   }
   &__info {
     display: flex;
     flex-direction: column;
-    grid-template-columns: repeat(2, 1fr);
     width: 100%;
     &__first {
       display: flex;
       justify-content: space-between;
+      @media (max-width: 768px) {
+        flex-direction: column;
+        margin-bottom: 13px;
+      }
       &__item {
         display: flex;
         flex-direction: column;
         h1 {
-          text-wrap: nowrap;
           color: #ff6060;
           font-size: 36px;
           font-weight: 500;
+          @media (max-width: 768px) {
+            font-size: 18px;
+          }
         }
         h2 {
           font-size: 18px;
           font-weight: 500;
+          @media (max-width: 768px) {
+            font-size: 14px;
+          }
         }
         &__tags {
           display: flex;
           margin-block: 24px;
+          @media (max-width: 768px) {
+            margin-block: 10px;
+          }
           h4 {
+            display: flex;
+            text-align: center;
+            align-self: center;
             padding-inline: 30px;
             padding-block: 7px;
             border-radius: 10px;
@@ -63,12 +93,22 @@
             color: white;
             font-size: 14px;
             margin-right: 10px;
+            @media (max-width: 768px) {
+              padding-block: 5px;
+              border-radius: 5px;
+              font-size: 10px;
+            }
           }
         }
       }
       &__person {
         display: flex;
         flex-direction: column;
+        @media (max-width: 768px) {
+          flex-direction: row-reverse;
+          align-items: center;
+          justify-content: space-between;
+        }
         &__identity {
           display: flex;
           align-items: center;
@@ -80,10 +120,16 @@
             font-size: 18px;
             font-weight: 500;
             margin-right: 10px;
+            @media (max-width: 768px) {
+              font-size: 12px;
+            }
           }
           img {
             width: 64px;
             border-radius: 32px;
+            @media (max-width: 768px) {
+              width: 32px;
+            }
           }
         }
         &__rating {
@@ -91,6 +137,10 @@
           text-align: right;
           .fa-solid {
             margin-left: 8px;
+            @media (max-width: 768px) {
+              transform: scale(0.8);
+              margin-left: 2px;
+            }
           }
         }
       }
@@ -100,6 +150,9 @@
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       column-gap: 76px;
+      @media (max-width: 768px) {
+        grid-template-columns: repeat(1, 1fr);
+      }
     }
     &__part {
       width: 100%;
@@ -131,7 +184,7 @@
       }
       &__show {
         border-radius: 5px;
-        max-height: 100px;
+        max-height: 200px;
         background-color: #f8f8f8;
         padding-inline: 20px;
         padding-block: 20px;

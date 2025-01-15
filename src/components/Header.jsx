@@ -1,6 +1,8 @@
 import { NavLink } from 'react-router'
 
 export function Header() {
+  const getActive = ({ isActive }) => (isActive ? 'header__nav--active' : '')
+
   return (
     <header className="header">
       <img
@@ -9,16 +11,10 @@ export function Header() {
         alt="Logo de Kasa"
       />
       <nav className="header__nav">
-        <NavLink
-          className={({ isActive }) => (isActive ? 'header__nav--active' : '')}
-          to="/"
-        >
+        <NavLink className={getActive} to="/">
           Accueil
         </NavLink>
-        <NavLink
-          className={({ isActive }) => (isActive ? 'header__nav--active' : '')}
-          to="/about"
-        >
+        <NavLink className={getActive} to="/about">
           A Propos
         </NavLink>
       </nav>

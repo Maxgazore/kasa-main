@@ -14,7 +14,7 @@ export default function Home() {
         {Data.map((item) => (
           <Link
             to={'/detail/' + item.id}
-            state={{ myItem: item }}
+            state={{ itemData: item }}
             key={item.id}
             className="card"
           >

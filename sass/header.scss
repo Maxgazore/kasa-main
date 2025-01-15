@@ -4,12 +4,24 @@
   justify-content: space-between;
   margin-inline: 100px;
   margin-top: 45px;
+  @media (max-width: 768px) {
+    margin-inline: 20px;
+    margin-top: 20px;
+  }
+  &__logo {
+    @media (max-width: 768px) {
+      width: 145px;
+    }
+  }
   &__nav {
     display: flex;
     list-style: none;
     font-size: 24px;
     gap: 57px;
-    height: 27px;
+    @media (max-width: 768px) {
+      gap: 26px;
+      font-size: 12px;
+    }
     &--active {
       border-bottom: 1px solid black;
       border-spacing: 0;

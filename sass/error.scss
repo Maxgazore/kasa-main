@@ -3,17 +3,28 @@
   &__title {
     color: #ff6060;
     font-size: 288px;
-    margin: 139px;
+    margin-block: 139px;
+    @media (max-width: 768px) {
+      font-size: 96px;
+    }
   }
   &__subtitle {
     color: #ff6060;
     font-size: 36px;
     font-weight: 500;
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
   }
   &__link {
     display: block;
     width: 250px;
     margin: 139px auto;
     border-bottom: solid 1px black;
+    @media (max-width: 768px) {
+      width: 218px;
+      margin: 113px auto;
+      font-size: 14px;
+    }
   }
 }

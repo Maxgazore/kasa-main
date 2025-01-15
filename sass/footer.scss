@@ -1,14 +1,27 @@
 .footer {
+  height: 209px;
   background-color: black;
   text-align: center;
   &__logo {
     filter: brightness(3);
-    transform: scale(0.5);
+    width: 122px;
     padding-top: 60px;
+    padding-bottom: 28px;
+    @media (max-width: 768px) {
+      padding-bottom: 0;
+    }
   }
   &__text {
+    display: flex;
+    justify-content: center;
     color: white;
     font-size: 24px;
     padding-bottom: 29px;
+    @media (max-width: 768px) {
+      margin: auto;
+      margin-top: 15px;
+      width: 132px;
+      font-size: 12px;
+    }
   }
 }
