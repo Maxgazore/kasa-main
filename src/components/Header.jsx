@@ -1,7 +1,8 @@
 import { NavLink } from 'react-router'
 
 export function Header() {
-  const getActive = ({ isActive }) => (isActive ? 'header__nav--active' : '')
+  //Changement de style des boutons selon la page actif
+  const getActive = ({ isActive }) => (isActive ? 'header__nav--active' : null)
 
   return (
     <header className="header">

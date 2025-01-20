@@ -4,6 +4,7 @@ import { Rating, Collapser, Slider } from '../components'
 
 export default function Detail() {
   let location = useLocation()
+  //Navigation vers la page erreur si la state est vide
   if (!location.state) {
     return <Navigate replace to="/error" />
   }

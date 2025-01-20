@@ -4,10 +4,12 @@ import { useState } from 'react'
 export function Collapser({ classType, title, text }) {
   const [selected, setSelected] = useState(false)
 
+  //fonction qui change l'état de selected si on clique sur l'icone
   function toggle() {
     setSelected(!selected)
   }
 
+  //Transformation de l'icone si selected est vrai
   const rotation = {
     transform: selected ? 'rotate(180deg)' : '',
     transition: '200ms linear',
@@ -23,6 +25,7 @@ export function Collapser({ classType, title, text }) {
           style={rotation}
         ></i>
       </div>
+      {/*Affiche une liste si text est un tableau*/}
       {Array.isArray(text) ? (
         <ul
           className={

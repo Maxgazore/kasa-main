@@ -4,8 +4,10 @@ import PropTypes from 'prop-types'
 export function Slider({ item }) {
   const length = item.pictures.length
   const [index, setIndex] = useState(0)
-  const displayStyle = item.pictures.length == 1 ? { display: 'none' } : null
+  //Disparition des flèches et du nombre d'image si length est egal à un
+  const displayStyle = length == 1 ? { display: 'none' } : null
 
+  //Fonction du slider selon si on clique sur la flèche gauche ou la flèche droite
   function slideActions(isLeft) {
     if (isLeft) {
       setIndex(index > 0 ? index - 1 : length - 1)
@@ -39,7 +41,7 @@ export function Slider({ item }) {
         alt="Photo du logement"
       />
       <p className="detail__slider__count" style={displayStyle}>
-        {index + 1 + '/' + item.pictures.length}
+        {index + 1 + '/' + length}
       </p>
     </div>
   )

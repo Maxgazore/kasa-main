@@ -1,6 +1,6 @@
-import Data from '../assets/logements.json'
 import { Link } from 'react-router'
 import { Banner } from '../components'
+import Data from '../assets/logements.json'
 
 export default function Home() {
   return (
