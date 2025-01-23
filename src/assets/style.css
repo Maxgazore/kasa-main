@@ -90,7 +90,18 @@
 .home__grid .card {
   position: relative;
 }
+.home__grid .card__gradient {
+  position: relative;
+  width: 100%;
+  height: 340px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), transparent 50%);
+  border-radius: 10px;
+  z-index: 1;
+}
 .home__grid .card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 340px;
   border-radius: 10px;
@@ -109,6 +120,7 @@
   font-size: 18px;
   font-weight: bold;
   text-shadow: 1px 1px 0px black, -1px -1px 0px black, -1px 1px 0px black, 1px -1px 0px black;
+  z-index: 2;
 }
 
 .about {

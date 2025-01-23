@@ -18,11 +18,13 @@ export default function Home() {
             key={item.id}
             className="card"
           >
+            <div className="card__gradient"></div>
             <img
               className="card__img"
               src={item.cover}
               alt="Photo de la location"
             />
+
             <h2 className="card__title">{item.title}</h2>
           </Link>
         ))}
