@@ -98,6 +98,11 @@
   border-radius: 10px;
   z-index: 1;
 }
+@media (max-width: 768px) {
+  .home__grid .card__gradient {
+    height: 255px;
+  }
+}
 .home__grid .card__img {
   position: absolute;
   top: 0;

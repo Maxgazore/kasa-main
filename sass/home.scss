@@ -52,6 +52,9 @@
         background: linear-gradient(0deg, rgb(0, 0, 0, 0.5), transparent 50%);
         border-radius: 10px;
         z-index: 1;
+        @media (max-width: 768px) {
+          height: 255px;
+        }
       }
       &__img {
         position: absolute;
