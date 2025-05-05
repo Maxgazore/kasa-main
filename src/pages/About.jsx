@@ -1,5 +1,7 @@
 import { Banner, Collapser } from '../components'
 
+import aboutBanner from '../assets/images/about_image.png'
+
 export default function About() {
   const data = [
     {
@@ -26,7 +28,7 @@ export default function About() {
 
   return (
     <section className="about">
-      <Banner classType={'about'} img={'src/assets/images/about_image.png'} />
+      <Banner classType={'about'} img={aboutBanner} />
       <div className="about__info">
         {data.map((item) => (
           <Collapser
