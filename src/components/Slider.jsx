@@ -1,6 +1,9 @@
 import { useState } from 'react'
 import PropTypes from 'prop-types'
 
+import arrowLeft from '../assets/images/arrow_left.png'
+import arrowRight from '../assets/images/arrow_right.png'
+
 export function Slider({ item }) {
   const length = item.pictures.length
   const [index, setIndex] = useState(0)
@@ -23,7 +26,7 @@ export function Slider({ item }) {
           slideActions(true)
         }}
         className="arrow arrow_left"
-        src="../src/assets/images/arrow_left.png"
+        src={arrowLeft}
         alt="Flèche gauche"
       />
       <img
@@ -32,7 +35,7 @@ export function Slider({ item }) {
           slideActions(false)
         }}
         className="arrow arrow_right"
-        src="../src/assets/images/arrow_right.png"
+        src={arrowRight}
         alt="Flèche droite"
       />
       <img
